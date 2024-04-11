@@ -29,23 +29,26 @@ const Contact = () => {
       </div>
 
       <div className="md:px-28 md:mt-20 mt-10 px-5">
-        <div className=" flex">
-          <section className=" bg-[#FF4800] w-[50%]">
+        <div className=" md:flex">
+          <section className=" bg-[#FF4800] md:w-[50%]">
             <form action="" className="p-3 w-full">
               <input
                 type="text"
+                required
                 placeholder="Your Name"
                 className="h-[45px] outline-none border-none px-5 w-full"
               />
               <br />
               <input
                 type="text"
+                required
                 placeholder="Your Email"
                 className="h-[45px] outline-none border-none mt-2 px-5 w-full"
               />
               <br />
               <input
                 type="text"
+                required
                 placeholder="Subject"
                 className="h-[45px] outline-none border-none mt-2 px-5 w-full"
               />
@@ -62,9 +65,9 @@ const Contact = () => {
             </form>
           </section>
 
-          <section className="w-[50%] ">
+          <section className="md:w-[50%] md:mt-0 mt-3">
             <img
-              className="h-[420px]"
+              className="md:h-[420px]"
               src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/feature.jpg"
               alt=""
             />

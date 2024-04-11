@@ -195,7 +195,7 @@ const Firstpage = () => {
             <section className="flex">
               <FaUsers className="md:text-7xl text-5xl" />
               <div className="ml-3 md:mt-3">
-                <p className="md:text-lg font-bold">1234</p>
+                <p className="md:text-lg font-bold">7,530</p>
                 <p className="text-sm font-medium text-[#FF4800]">
                   Happy Clients
                 </p>
@@ -204,7 +204,7 @@ const Firstpage = () => {
             <section className="mt-5 flex">
               <FaStar className="md:text-7xl text-5xl" />
               <div className="ml-3 md:mt-3">
-                <p className="md:text-lg font-bold">1234</p>
+                <p className="md:text-lg font-bold">1,200</p>
                 <p className="text-sm font-medium text-[#FF4800]">
                   Customer Reviews
                 </p>
@@ -213,7 +213,7 @@ const Firstpage = () => {
             <section className="mt-5 flex">
               <FaShip className="md:text-7xl text-5xl" />
               <div className="ml-3 md:mt-3">
-                <p className="md:text-lg font-bold">1234</p>
+                <p className="md:text-lg font-bold">10,400</p>
                 <p className="text-sm font-medium text-[#FF4800]">
                   Complete Shipments
                 </p>
@@ -361,6 +361,44 @@ const Firstpage = () => {
 
       <div className="md:mt-20 mt-10">
         <div className="text-center">
+          <p className="md:text-3xl text-xl md:mt-3 font-extrabold">
+            Trusted Collaborations
+          </p>
+        </div>
+        <div className="mt-5 grid md:gap-3 items-center grid-rows-4 md:grid-rows-none md:grid-cols-4 md:px-20 px-5">
+          <section className="flex justify-center">
+            <img
+              className="md:w-full w-[50%]"
+              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2016/11/WBENC-full-tilt-logistics.png?lossy=1&strip=1&webp=1"
+              alt=""
+            />
+            
+          </section>
+          <section className="flex justify-center">
+            <img
+              className="md:w-full w-[50%]"
+              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2017/12/EDAWNLogo-300x169.png?lossy=1&strip=1&webp=1"
+              alt=""
+            />
+          </section>
+          <section className="flex justify-center">
+            <img
+              className="md:w-full w-[50%]"
+              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2019/10/SmartWay-transport-partnership.jpg?lossy=1&strip=1&webp=1"
+              alt=""
+            />
+          </section>
+          <section className="flex justify-center">
+            <img
+              className="md:w-full w-[50%]"
+              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2018/05/family-owned-business-award.png?lossy=1&strip=1&webp=1"
+              alt=""
+            />
+          </section>
+        </div>
+      </div>
+      <div className="md:mt-20 mt-10">
+        <div className="text-center">
           <p className="md:text-4xl text-2xl md:mt-3 font-extrabold">
             Expert Team Members
           </p>
@@ -437,13 +475,6 @@ const Firstpage = () => {
         </div>
       </div>
 
-      <div className="mt-20">
-        <div className="px-20">
-          <section></section>
-          <section></section>
-        </div>
-      </div>
-
       <div>
         <React.Fragment>
           <Dialog
@@ -463,7 +494,9 @@ const Firstpage = () => {
                     onChange={(event) => setData(event.target.value)}
                     className="md:w-[500px] w-[300px] mt-2 outline-none border-2 border-black px-3 py-2"
                   />
-                  <p className="mt-2 text-red-600 text-xs text-center">{error}</p>
+                  <p className="mt-2 text-red-600 text-xs text-center">
+                    {error}
+                  </p>
                 </div>
               </DialogContentText>
             </DialogContent>
@@ -484,7 +517,7 @@ const Firstpage = () => {
         </React.Fragment>
       </div>
 
-      <footer className="bg-[#1F1F2E] md:px-10 pb-10 pt-10 md:pt-20">
+      <footer className="bg-[#1F1F2E] mt-20 md:px-10 pb-10 pt-10 md:pt-20">
         <div className="grid grid-rows-3 md:grid-rows-none md:grid-cols-3 md:px-20 px-5">
           <section>
             <p className="md:text-3xl text-2xl text-[#FF4800] font-bold">

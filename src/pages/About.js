@@ -60,62 +60,43 @@ const About = () => {
         </section>
       </div>
 
-      {/* <div className="bg-[#F2F2F4] mt-20 px-5 md:px-24 md:py-10 py-5 md:flex">
-        <section className="md:w-[50%]">
-          <p className="md:text-3xl text-2xl mt-5 font-bold">
-            #1 Place To Manage All Of Your Shipments
+      <div className="md:mt-20 mt-10">
+        <div className="text-center">
+          <p className="md:text-3xl text-xl md:mt-3 font-extrabold">
+            Trusted Collaborations
           </p>
-          <p className="md:mt-5 mt-2 text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            perspiciatis veritatis officia odio dolore, saepe dolores sapiente
-            blanditiis nostrum sint! Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Sed, ipsum?
-          </p>
-
-          <div className="mt-5 flex">
-            <p className="p-3 bg-[#FF4800] text-white w-fit">
-              <MdOutlineSupportAgent className="md:text-5xl text-3xl" />
-            </p>
-            <section className="md:mt-4 mt-1 ml-2">
-              <p className="text-sm font-medium">Call for any query!</p>
-              <p className="md:text-2xl text-xl text-[#FF4800] font-semibold">
-                +012 345 6789
-              </p>
-            </section>
-          </div>
-        </section>
-        <section className="md:p-20 md:mt-0 mt-10  md:py-5">
-          <div>
-            <section className="flex">
-              <FaUsers className="md:text-7xl text-5xl" />
-              <div className="ml-3 md:mt-3">
-                <p className="md:text-lg font-bold">1234</p>
-                <p className="text-sm font-medium text-[#FF4800]">
-                  Happy Clients
-                </p>
-              </div>
-            </section>
-            <section className="mt-5 flex">
-              <FaStar className="md:text-7xl text-5xl" />
-              <div className="ml-3 md:mt-3">
-                <p className="md:text-lg font-bold">1234</p>
-                <p className="text-sm font-medium text-[#FF4800]">
-                  Customer Reviews
-                </p>
-              </div>
-            </section>
-            <section className="mt-5 flex">
-              <FaShip className="md:text-7xl text-5xl" />
-              <div className="ml-3 md:mt-3">
-                <p className="md:text-lg font-bold">1234</p>
-                <p className="text-sm font-medium text-[#FF4800]">
-                  Complete Shipments
-                </p>
-              </div>
-            </section>
-          </div>
-        </section>
-      </div> */}
+        </div>
+        <div className="mt-5 grid md:gap-3 items-center grid-rows-4 md:grid-rows-none md:grid-cols-4 md:px-20 px-5">
+          <section className="flex justify-center">
+            <img
+              className="md:w-full w-[50%]"
+              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2016/11/WBENC-full-tilt-logistics.png?lossy=1&strip=1&webp=1"
+              alt=""
+            />
+          </section>
+          <section className="flex justify-center">
+            <img
+              className="md:w-full w-[50%]"
+              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2017/12/EDAWNLogo-300x169.png?lossy=1&strip=1&webp=1"
+              alt=""
+            />
+          </section>
+          <section className="flex justify-center">
+            <img
+              className="md:w-full w-[50%]"
+              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2019/10/SmartWay-transport-partnership.jpg?lossy=1&strip=1&webp=1"
+              alt=""
+            />
+          </section>
+          <section className="flex justify-center">
+            <img
+              className="md:w-full w-[50%]"
+              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2018/05/family-owned-business-award.png?lossy=1&strip=1&webp=1"
+              alt=""
+            />
+          </section>
+        </div>
+      </div>
 
       <div className="md:mt-20 mt-10">
         <div className="text-center">
