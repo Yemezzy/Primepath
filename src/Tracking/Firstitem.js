@@ -52,23 +52,23 @@ const Firstitem = () => {
         </div> */}
 
         <div>
-          <ul className="grid grid-cols-6 text-center">
-            <li className="border-2 px-  bg-black text-xs md:text-base text-white border-black py-2 font-semibold">
+          <ul className="grid md:grid-cols-6 grid-cols-3 text-center">
+            <li className="border-2  bg-black text-base text-white border-black py-2 font-semibold">
               Order Status:
             </li>
-            <li className="border-2 border-black border-l-0 text-xs md:text-base py-2 font-semibold">
+            <li className="border-2 border-black border-l-0 text-base py-2 font-semibold">
               Pending
             </li>
-            <li className="border-2 border-black border-l-0 text-xs md:text-base py-2 font-semibold bg-green-700 text-white">
+            <li className="border-2 border-black border-l-0 text-base py-2 font-semibold bg-green-700 text-white">
               Processing
             </li>
-            <li className="border-2 border-black border-l-0 text-xs md:text-base py-2 font-semibold">
+            <li className="border-2 mt-1 md:mt-0 border-black border-l-2 md:border-l-0 text-base py-2 font-semibold">
               On Hold
             </li>
-            <li className="border-2 border-black border-l-0 text-xs md:text-base py-2 font-semibold">
+            <li className="border-2 mt-1 md:mt-0 border-black border-l-0 text-base py-2 font-semibold">
               Completed
             </li>
-            <li className="border-2 border-black border-l-0 text-xs md:text-base py-2 font-semibold">
+            <li className="border-2 mt-1 md:mt-0 border-black border-l-0 text-base py-2 font-semibold">
               Canceled
             </li>
           </ul>
@@ -80,7 +80,7 @@ const Firstitem = () => {
         </div>
 
         <div className="mt-10 md:grid gap-10 grid-cols-2">
-          <section className="p-2 mb-10 h-[200px] border border-black">
+          <section className="p-2 mb-10 h-[200px] border-2 border-green-600 border-l-8">
             <p className="text-xl font-semibold">Delivery Details</p>
             <div className="grid grid-cols-2 ">
               <p className="text-lg mt-2 font-medium">

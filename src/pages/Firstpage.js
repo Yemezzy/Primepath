@@ -36,7 +36,7 @@ const Firstpage = () => {
    if (data === track) {
        setTimeout(() => {
          setShow(false);
-          
+        
        }, 500);
      setInterval(() => {
       setOpen(true);
@@ -45,7 +45,10 @@ const Firstpage = () => {
        window.location.href = "/500";
      }, 5000);
    } else {
-     setError("Unable to find details");
+     setTimeout(() => {
+       setError("Unable to find details / Incorrect Tracking Number");
+     }, 3000);
+     
    }
    if (data === "") {
      setError("");
@@ -72,6 +75,7 @@ const Firstpage = () => {
    const handleClose = () => {
      setShow(false);
      setOpen(false)
+     setError("");
    };
 
   return (
@@ -90,10 +94,10 @@ const Firstpage = () => {
         <div className="stt  md:h-[455px] py-20 md:py-28">
           <section className="flex justify-center text-center items-center">
             <div>
-              <p className="text-4xl font-extrabold text-[#FF4800]">
+              <p className="md:text-4xl text-3xl font-extrabold text-[#FF4800]">
                 Safe & Faster
               </p>
-              <p className="md:text-7xl text-5xl font-extrabold text-white mt-5">
+              <p className="md:text-7xl text-4xl font-extrabold text-white mt-3 md:mt-5">
                 Logistics Services
               </p>
 
@@ -114,7 +118,7 @@ const Firstpage = () => {
               </div>
               <p className="text-white mt-3 text-xl font-semibold">{error}</p> */}
 
-              <p className="md:text-lg px-5 text-white md:px-28 mt-5">
+              <p className="md:text-lg px-5 text-white md:px-28 mt-3 md:mt-5">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Exercitationem unde fugit, molestiae voluptatem repudiandae
                 vitae quidem repellat dolorem quibusdam odio nisi temporibus
@@ -457,15 +461,15 @@ const Firstpage = () => {
                   <input
                     type="text"
                     onChange={(event) => setData(event.target.value)}
-                    className="w-[500px] mt-2 outline-none border-2 border-black px-3 py-2"
+                    className="md:w-[500px] w-[100%] mt-2 outline-none border-2 border-black px-3 py-2"
                   />
-                  <p>{error}</p>
+                  <p className="mt-2 text-red-600 text-xs text-center">{error}</p>
                 </div>
               </DialogContentText>
             </DialogContent>
             <DialogActions>
               <Button onClick={handleClose} variant="contained">
-                Disagree
+                Cancel
               </Button>
               <Button
                 autoFocus
@@ -473,7 +477,7 @@ const Firstpage = () => {
                 variant="contained"
                 color="success"
               >
-                Agree
+                Track & Trace
               </Button>
             </DialogActions>
           </Dialog>
@@ -483,7 +487,9 @@ const Firstpage = () => {
       <footer className="bg-[#1F1F2E] md:px-10 pb-10 pt-10 md:pt-20">
         <div className="grid grid-rows-3 md:grid-rows-none md:grid-cols-3 md:px-20 px-5">
           <section>
-            <p className="text-3xl text-[#FF4800] font-bold">Quick Links</p>
+            <p className="md:text-3xl text-2xl text-[#FF4800] font-bold">
+              Quick Links
+            </p>
             <ul className="mt-5 text-white font-semibold">
               <li className="flex items-center gap-2">
                 <FaMapMarkerAlt /> 123 Street, New York, USA
@@ -497,7 +503,9 @@ const Firstpage = () => {
             </ul>
           </section>
           <section>
-            <p className="text-3xl text-[#FF4800] font-bold">Get In Touch</p>
+            <p className="md:text-3xl text-2xl text-[#FF4800] font-bold">
+              Get In Touch
+            </p>
             <ul className="mt-5 text-white font-semibold">
               <li className="flex items-center gap-2">
                 <FaAngleRight />
@@ -526,7 +534,9 @@ const Firstpage = () => {
             </ul>
           </section>
           <section>
-            <p className="text-3xl text-[#FF4800] font-bold">Newsletter</p>
+            <p className="md:text-3xl text-2xl text-[#FF4800] font-bold">
+              Newsletter
+            </p>
             <div className="mt-5 text-white font-semibold">
               <p>
                 Be the first to know about new services, special promotions, and
@@ -534,7 +544,7 @@ const Firstpage = () => {
                 mailing list and stay connected with the latest development in
                 the world of logistics!
               </p>
-              <section className="mt-5 w-full h-[50px]">
+              <section className="mt-5 bg-white w-full h-[50px]">
                 <input
                   placeholder="Your Email Address"
                   type="email"
