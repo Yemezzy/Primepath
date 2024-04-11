@@ -461,7 +461,7 @@ const Firstpage = () => {
                   <input
                     type="text"
                     onChange={(event) => setData(event.target.value)}
-                    className="md:w-[500px] w-[100%] mt-2 outline-none border-2 border-black px-3 py-2"
+                    className="md:w-[500px] w-[300px] mt-2 outline-none border-2 border-black px-3 py-2"
                   />
                   <p className="mt-2 text-red-600 text-xs text-center">{error}</p>
                 </div>
