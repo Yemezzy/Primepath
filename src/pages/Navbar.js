@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import {
   FaAngleRight,
+  FaBars,
   FaGlobe,
   FaMap,
   FaMapMarkerAlt,
@@ -56,6 +57,11 @@ const Navbar = () => {
           <Link to="/get-a-quote">
             <button className="px-7 md:block hidden py-2 text-sm font-semibold text-white bg-[#FF4800]">
               Get A Quote
+            </button>
+          </Link>
+          <Link  className="md:hidden block">
+            <button className="px-7  text-2xl py-2 font-semibold text-[#FF4800]">
+              <FaBars />
             </button>
           </Link>
         </div>

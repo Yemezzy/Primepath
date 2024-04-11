@@ -4,3 +4,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
