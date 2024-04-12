@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaAngleRight,
   FaGlobe,
@@ -24,8 +24,14 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { amber } from "@mui/material/colors";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Firstpage = () => {
+useEffect(() => {
+  Aos.init({ duration: 2000 });
+}, []);
+
 
  const track = "23105548938495893";
  // const error = "";
@@ -94,10 +100,16 @@ const Firstpage = () => {
         <div className="stt  md:h-[455px] py-20 md:py-28">
           <section className="flex justify-center text-center items-center">
             <div>
-              <p className="md:text-4xl text-3xl font-extrabold text-[#FF4800]">
+              <p
+                data-aos="fade-up"
+                className="md:text-4xl text-3xl font-extrabold text-[#FF4800]"
+              >
                 Safe & Faster
               </p>
-              <p className="md:text-7xl text-4xl font-extrabold text-white mt-3 md:mt-5">
+              <p
+                data-aos="fade-up"
+                className="md:text-7xl text-4xl font-extrabold text-white mt-3 md:mt-5"
+              >
                 Logistics Services
               </p>
 
@@ -118,7 +130,10 @@ const Firstpage = () => {
               </div>
               <p className="text-white mt-3 text-xl font-semibold">{error}</p> */}
 
-              <p className="md:text-lg px-5 text-white md:px-28 mt-3 md:mt-5">
+              <p
+                data-aos="fade-up"
+                className="md:text-lg px-5 text-white md:px-28 mt-3 md:mt-5"
+              >
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Exercitationem unde fugit, molestiae voluptatem repudiandae
                 vitae quidem repellat dolorem quibusdam odio nisi temporibus
@@ -127,6 +142,7 @@ const Firstpage = () => {
               </p>
 
               <button
+                data-aos="fade-up"
                 onClick={handleOpen}
                 className="px-5 py-3 text-xl font-bold text-white bg-[#FF4800] mt-5"
               >
@@ -137,7 +153,7 @@ const Firstpage = () => {
         </div>
 
         <div className="md:mt-28 mt-20 mb-10 md:px-24 px-5 md:flex">
-          <section className="md:w-[40%] md:ml-4">
+          <section data-aos="fade-right" className="md:w-[40%] md:ml-4">
             <img
               src="https://demo.htmlcodex.com/1309/logistics-company-website-template/img/about.jpg"
               alt=""
@@ -149,16 +165,21 @@ const Firstpage = () => {
           </section>
 
           <section className="md:px-10  md:w-[65%]">
-            <p className="text-[#FF4800] mt-16 font-bold ">About Us</p>
-            <p className="md:text-4xl text-2xl font-bold md:mt-3">
+            <p data-aos="fade-up" className="text-[#FF4800] mt-16 font-bold ">
+              About Us
+            </p>
+            <p
+              data-aos="fade-up"
+              className="md:text-4xl text-2xl font-bold md:mt-3"
+            >
               Trusted & Faster Logistic Service Provider
             </p>
-            <p className="md:mt-5 mt-2 text-gray-500">
+            <p data-aos="fade-up" className="md:mt-5 mt-2 text-gray-500">
               PrimePath Logistics is a registered and licensed contract
               logistics, freight forwarding, global sourcing, distribution,
               logistics and supply chain consulting company
             </p>
-            <p className="mt-2  text-gray-500">
+            <p data-aos="fade-up" className="mt-2  text-gray-500">
               We are in business to provide services such as Contract Logistics,
               Freight Forwarding, Warehousing and Distribution, Cross Docking,
               Reverse Logistics, Customs Brokerage, Consulting and Optimization
@@ -170,15 +191,18 @@ const Firstpage = () => {
 
       <div className="bg-[#F2F2F4] mt-20 px-5 md:px-24 md:py-10 py-5 md:flex">
         <section className="md:w-[50%]">
-          <p className="md:text-3xl text-2xl mt-5 font-bold">
+          <p
+            data-aos="fade-right"
+            className="md:text-3xl text-2xl mt-5 font-bold"
+          >
             #1 Place To Manage All Of Your Shipments
           </p>
-          <p className="md:mt-5 mt-2 text-gray-500">
+          <p data-aos="fade-right" className="md:mt-5 mt-2 text-gray-500">
             Experience the difference with PrimePath. Let us handle your
             logistics, so you can focus on what you do best
           </p>
 
-          <div className="mt-5 flex">
+          <div data-aos="fade-right" className="mt-5 flex">
             <p className="p-3 bg-[#FF4800] text-white w-fit">
               <MdOutlineSupportAgent className="md:text-5xl text-3xl" />
             </p>
@@ -192,7 +216,7 @@ const Firstpage = () => {
         </section>
         <section className="md:p-20 md:mt-0 mt-10  md:py-5">
           <div>
-            <section className="flex">
+            <section data-aos="fade-up" className="flex">
               <FaUsers className="md:text-7xl text-5xl" />
               <div className="ml-3 md:mt-3">
                 <p className="md:text-lg font-bold">7,530</p>
@@ -201,7 +225,7 @@ const Firstpage = () => {
                 </p>
               </div>
             </section>
-            <section className="mt-5 flex">
+            <section data-aos="fade-up" className="mt-5 flex">
               <FaStar className="md:text-7xl text-5xl" />
               <div className="ml-3 md:mt-3">
                 <p className="md:text-lg font-bold">1,200</p>
@@ -210,7 +234,7 @@ const Firstpage = () => {
                 </p>
               </div>
             </section>
-            <section className="mt-5 flex">
+            <section data-aos="fade-up" className="mt-5 flex">
               <FaShip className="md:text-7xl text-5xl" />
               <div className="ml-3 md:mt-3">
                 <p className="md:text-lg font-bold">10,400</p>
@@ -225,13 +249,21 @@ const Firstpage = () => {
 
       <div className="md:mt-20 mt-20">
         <div className="text-center">
-          <p className="font-bold text-[#FF4800]">OUR SERVICES</p>
-          <p className="md:text-4xl text-2xl md:mt-3 font-extrabold">
+          <p data-aos="zoom-in" className="font-bold text-[#FF4800]">
+            OUR SERVICES
+          </p>
+          <p
+            data-aos="zoom-in"
+            className="md:text-4xl text-2xl md:mt-3 font-extrabold"
+          >
             Best Logistic Services
           </p>
         </div>
         <div className="mt-10 grid gap-3 grid-rows-4 md:grid-rows-none md:grid-cols-4 md:px-20 px-5">
-          <section className="w-full shadow-md shadow-gray-500">
+          <section
+            data-aos="fade-right"
+            className="w-full shadow-md shadow-gray-500"
+          >
             <img
               src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/service-1.jpg"
               alt=""
@@ -249,7 +281,10 @@ const Firstpage = () => {
               </p>
             </div>
           </section>
-          <section className="w-full shadow-md shadow-gray-500">
+          <section
+            data-aos="fade-right"
+            className="w-full shadow-md shadow-gray-500"
+          >
             <img
               src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/service-2.jpg"
               alt=""
@@ -266,7 +301,10 @@ const Firstpage = () => {
               </p>
             </div>
           </section>
-          <section className="w-full shadow-md shadow-gray-500">
+          <section
+            data-aos="fade-right"
+            className="w-full shadow-md shadow-gray-500"
+          >
             <img
               src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/service-3.jpg"
               alt=""
@@ -283,7 +321,10 @@ const Firstpage = () => {
               </p>
             </div>
           </section>
-          <section className="w-full shadow-md shadow-gray-500">
+          <section
+            data-aos="fade-right"
+            className="w-full shadow-md shadow-gray-500"
+          >
             <img
               src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/service-4.jpg"
               className="w-full"
@@ -307,12 +348,20 @@ const Firstpage = () => {
       <div className="md:mt-28 mt-20 px-5 md:px-20">
         <div className="md:flex">
           <section className="md:w-[50%]">
-            <p className="text-[#FF4800] font-bold text-sm">OUR FEATURES</p>
-            <p className="font-bold text-2xl md:text-4xl mt-3">
+            <p
+              data-aos="fade-right"
+              className="text-[#FF4800] font-bold text-sm"
+            >
+              OUR FEATURES
+            </p>
+            <p
+              data-aos="fade-right"
+              className="font-bold text-2xl md:text-4xl mt-3"
+            >
               We Are Trusted Logistics Company Since 1990
             </p>
             <div className="md:mt-10 mt-5">
-              <section className="flex gap-5">
+              <section data-aos="fade-right" className="flex gap-5">
                 <FaGlobe className="md:text-7xl text-8xl text-[#FF4800]" />
                 <div>
                   <p className="text-lg mt-2 font-bold">Worldwide Service</p>
@@ -324,7 +373,7 @@ const Firstpage = () => {
                   </p>
                 </div>
               </section>
-              <section className="flex gap-5 mt-10">
+              <section data-aos="fade-right" className="flex gap-5 mt-10">
                 <TbTruckDelivery className="md:text-7xl text-8xl text-[#FF4800]" />
                 <div>
                   <p className="text-lg mt-2 font-bold">On Time Delivery</p>
@@ -335,7 +384,7 @@ const Firstpage = () => {
                   </p>
                 </div>
               </section>
-              <section className="flex gap-5 mt-10">
+              <section data-aos="fade-right" className="flex gap-5 mt-10">
                 <MdOutlineSupportAgent className="md:text-7xl text-8xl text-[#FF4800]" />
                 <div>
                   <p className="text-lg mt-2 font-bold">
@@ -350,7 +399,7 @@ const Firstpage = () => {
               </section>
             </div>
           </section>
-          <section className="md:w-[50%] py-10 md:px-5">
+          <section data-aos="zoom-in" className="md:w-[50%] py-10 md:px-5">
             <img
               src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/feature.jpg"
               alt=""
@@ -361,34 +410,36 @@ const Firstpage = () => {
 
       <div className="md:mt-20 mt-10">
         <div className="text-center">
-          <p className="md:text-3xl text-xl md:mt-3 font-extrabold">
+          <p
+            data-aos="fade-right"
+            className="md:text-3xl text-xl md:mt-3 font-extrabold"
+          >
             Trusted Collaborations
           </p>
         </div>
         <div className="mt-5 grid md:gap-3 items-center grid-rows-4 md:grid-rows-none md:grid-cols-4 md:px-20 px-5">
-          <section className="flex justify-center">
+          <section data-aos="fade-right" className="flex justify-center">
             <img
               className="md:w-full w-[50%]"
               src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2016/11/WBENC-full-tilt-logistics.png?lossy=1&strip=1&webp=1"
               alt=""
             />
-            
           </section>
-          <section className="flex justify-center">
+          <section data-aos="fade-right" className="flex justify-center">
             <img
               className="md:w-full w-[50%]"
               src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2017/12/EDAWNLogo-300x169.png?lossy=1&strip=1&webp=1"
               alt=""
             />
           </section>
-          <section className="flex justify-center">
+          <section data-aos="fade-right" className="flex justify-center">
             <img
               className="md:w-full w-[50%]"
               src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2019/10/SmartWay-transport-partnership.jpg?lossy=1&strip=1&webp=1"
               alt=""
             />
           </section>
-          <section className="flex justify-center">
+          <section data-aos="fade-right" className="flex justify-center">
             <img
               className="md:w-full w-[50%]"
               src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2018/05/family-owned-business-award.png?lossy=1&strip=1&webp=1"
@@ -398,13 +449,16 @@ const Firstpage = () => {
         </div>
       </div>
       <div className="md:mt-20 mt-10">
-        <div className="text-center">
+        <div data-aos="zoom-in" className="text-center">
           <p className="md:text-4xl text-2xl md:mt-3 font-extrabold">
             Expert Team Members
           </p>
         </div>
         <div className="md:mt-10 mt-5 grid gap-3 grid-rows-4 md:grid-rows-none md:grid-cols-4 md:px-20 px-5">
-          <section className="p-3 shadow-md shadow-gray-500">
+          <section
+            data-aos="fade-right"
+            className="p-3 shadow-md shadow-gray-500"
+          >
             <div className="flex items-center justify-center ">
               <img
                 src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/team-1.jpg"
@@ -421,7 +475,10 @@ const Firstpage = () => {
               </p>
             </div>
           </section>
-          <section className="p-3 shadow-md shadow-gray-500">
+          <section
+            data-aos="fade-right"
+            className="p-3 shadow-md shadow-gray-500"
+          >
             <div className="flex items-center justify-center ">
               <img
                 src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/team-2.jpg"
@@ -438,7 +495,10 @@ const Firstpage = () => {
               </p>
             </div>
           </section>
-          <section className="p-3 shadow-md shadow-gray-500">
+          <section
+            data-aos="fade-right"
+            className="p-3 shadow-md shadow-gray-500"
+          >
             <div className="flex items-center justify-center ">
               <img
                 src="https://demo.htmlcodex.com/1309/logistics-company-website-template/img/team-3.jpg"
@@ -455,7 +515,10 @@ const Firstpage = () => {
               </p>
             </div>
           </section>
-          <section className="p-3 shadow-md shadow-gray-500">
+          <section
+            data-aos="fade-right"
+            className="p-3 shadow-md shadow-gray-500"
+          >
             <div className="flex items-center justify-center ">
               <img
                 src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/team-4.jpg"
