@@ -18,6 +18,11 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer';
 
 const Contact = () => {
+
+   const submit = () => {
+     window.location.href = "/";
+  };
+  
   return (
     <div>
       <Navbar />
@@ -60,7 +65,7 @@ const Contact = () => {
                 className="h-[150px] outline-none border-none mt-2 p-5 w-full"
               />
 
-              <button className="w-full stt border-white border h-[45px] mt-2 font-bold text-white ">
+              <button onClick={submit} className="w-full stt border-white border h-[45px] mt-2 font-bold text-white ">
                 Send Message
               </button>
             </form>

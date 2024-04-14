@@ -41,7 +41,7 @@ const handleOpen = () => {
       window.location.href = "/";
            setOpen(false);
            alert(
-             "Your Request has been received, you will receive a response via email. Thank you, PRIMEPATH. ✅✅"
+             "Your Request has been received, you will receive a response via email. Thank you, PRIMEPATH."
            );
     }, 3000);
   }

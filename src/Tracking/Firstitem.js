@@ -83,9 +83,9 @@ const Firstitem = () => {
         </div>
 
         <div className="mt-10 md:grid gap-10 grid-cols-2">
-          <section className="p-2 mb-10 h-[200px] border-2 border-green-600 border-l-8">
+          <section className="p-2 mb-10 md:h-[200px] border-2 border-green-600 border-l-8">
             <p className="text-xl font-semibold">Delivery Details</p>
-            <div className="grid grid-cols-2 ">
+            <div className="md:grid grid-cols-2 ">
               <p className="text-lg mt-2 font-medium">
                 Sender: <span>Sabrinna. L</span>
               </p>
@@ -93,7 +93,7 @@ const Firstitem = () => {
                 Reciver: <span>Chris . A</span>
               </p>
             </div>
-            <div className="grid grid-cols-2 ">
+            <div className="md:grid grid-cols-2 ">
               <p className="text-lg mt-2 font-medium">
                 From: <span>Shahriar, Iran</span>
               </p>
@@ -101,7 +101,7 @@ const Firstitem = () => {
                 To: <span>1717 W Davidson Ave, Gastonia, NC 28052</span>
               </p>
             </div>
-            <div className="grid grid-cols-2 ">
+            <div className="md:grid grid-cols-2 ">
               <p className="text-lg mt-2 font-medium">
                 DOD: <span>Null</span>
               </p>
