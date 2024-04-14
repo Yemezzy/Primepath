@@ -113,7 +113,7 @@ const Firstitem = () => {
           </section>
 
           <section>
-            <div className="text-2xl font-bold text-black">
+            <div className="md:text-2xl text-xl font-bold text-black">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Shipping label created, Awaiting item</p>
@@ -123,7 +123,7 @@ const Firstitem = () => {
                 <p>April 15, 2024, 08:15am</p>
               </p>
             </div>
-            <div className="text-2xl font-bold text-black">
+            <div className="md:text-2xl text-xl font-bold text-black">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Received by shipping patner, Primepath awaiting item</p>
@@ -136,7 +136,7 @@ const Firstitem = () => {
                 </p>
               </p>
             </div>
-            <div className="text-2xl font-bold text-black">
+            <div className="md:text-2xl text-xl font-bold text-black">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>
@@ -145,10 +145,10 @@ const Firstitem = () => {
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
                 <p> Shahriar, Iran</p>
-                <p> April 15, 2024, 09:43pm</p>
+                <p> April 15, 2024, 09:43am</p>
               </p>
             </div>
-            <div className="text-2xl font-bold text-green-700">
+            <div className="md:text-2xl text-xl font-bold text-green-700">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Arrived at Primepath Facility</p>
