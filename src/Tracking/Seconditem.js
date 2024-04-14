@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   FaAngleRight,
   FaCheck,
@@ -23,11 +23,12 @@ const Seconditem = () => {
         <section className="flex gap-2 px-16 py-3 bg-[#1F1F2E] text-white text-xs">
           <p className="flex gap-2 items-center">
             <FaPhoneAlt />
-            +012 345 6789
+            <a href="tel:+39 365 478 9576">+39 365 478 9576</a>
           </p>
           |
           <p className="flex gap-1 items-center">
-            <IoMdMail className="text-sm" /> info@example.com
+            <IoMdMail className="text-sm" />{" "}
+            <a href="mailto:info@primepath.pro">Info@primepath.pro</a>
           </p>
         </section>
 
@@ -82,17 +83,17 @@ const Seconditem = () => {
         </div>
 
         <div className="mt-10 md:grid gap-10 grid-cols-2">
-          <section className="p-2 mb-10 h-[200px] border-2 border-green-600 border-l-8">
+          <section className="p-2 mb-10 md:h-[200px] border-2 border-green-600 border-l-8">
             <p className="text-xl font-semibold">Delivery Details</p>
-            <div className="grid grid-cols-2 ">
+            <div className="md:grid grid-cols-2 ">
               <p className="text-lg mt-2 font-medium">
-                Sender: <span>Yemezzy</span>
+                Sender: <span>Sabrinna Levorsen</span>
               </p>
               <p className="text-lg mt-2 font-medium">
-                Reciver: <span>Chris . A</span>
+                Reciver: <span>Chris Andexler</span>
               </p>
             </div>
-            <div className="grid grid-cols-2 ">
+            <div className="md:grid grid-cols-2 ">
               <p className="text-lg mt-2 font-medium">
                 From: <span>Shahriar, Iran</span>
               </p>
@@ -100,7 +101,7 @@ const Seconditem = () => {
                 To: <span>1717 W Davidson Ave, Gastonia, NC 28052</span>
               </p>
             </div>
-            <div className="grid grid-cols-2 ">
+            <div className="md:grid grid-cols-2 ">
               <p className="text-lg mt-2 font-medium">
                 DOD: <span>Null</span>
               </p>
@@ -178,12 +179,19 @@ const Seconditem = () => {
               </p>
             </div> */}
           </section>
+
+          <p className="md:mt-0 mt-3 text-sm md:text-base">
+            At Primepath Logistics we exceed expectations to ensure security and
+            safety of your esteeemed cargo. With our cutting-edge tracking
+            system, follow your shipment's journey with confidence, assured it's
+            in capable hands
+          </p>
         </div>
       </div>
 
       <Footer />
     </div>
   );
-}
+};
 
-export default Seconditem
+export default Seconditem;
