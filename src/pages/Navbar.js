@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="">
-        <section className="flex gap-2 px-16 py-3 bg-[#1F1F2E] text-white text-xs">
+        <section className="flex gap-2 justify-center md:px-16 py-3 bg-[#1F1F2E] text-white text-xs">
           <p className="flex gap-2 items-center">
             <FaPhoneAlt />
             <a href="tel:+39 365 478 9576">+39 365 478 9576</a>
@@ -73,7 +73,6 @@ const Navbar = () => {
               <Link to="/contact-us">
                 <li className="">Contact Us</li>
               </Link>
-            
             </ul>
           </section>
 
