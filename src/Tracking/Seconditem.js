@@ -1,5 +1,4 @@
-import React from "react";
-import Navbar from "../pages/Navbar";
+import React from 'react'
 import {
   FaAngleRight,
   FaCheck,
@@ -17,7 +16,7 @@ import { Link } from "react-router-dom";
 import { MdMail } from "react-icons/md";
 import Footer from "../pages/Footer";
 
-const Firstitem = () => {
+const Seconditem = () => {
   return (
     <div>
       <nav className="">
@@ -79,7 +78,7 @@ const Firstitem = () => {
 
         <div className="md:mt-10 mt-5">
           <p className="font-medium">Tracking Number</p>
-          <p className="font-bold underline">PP54896452-014SH</p>
+          <p className="font-bold underline">PP54896452-015SH</p>
         </div>
 
         <div className="mt-10 md:grid gap-10 grid-cols-2">
@@ -87,7 +86,7 @@ const Firstitem = () => {
             <p className="text-xl font-semibold">Delivery Details</p>
             <div className="grid grid-cols-2 ">
               <p className="text-lg mt-2 font-medium">
-                Sender: <span>Sabrinna. L</span>
+                Sender: <span>Yemezzy</span>
               </p>
               <p className="text-lg mt-2 font-medium">
                 Reciver: <span>Chris . A</span>
@@ -185,6 +184,6 @@ const Firstitem = () => {
       <Footer />
     </div>
   );
-};
+}
 
-export default Firstitem;
+export default Seconditem

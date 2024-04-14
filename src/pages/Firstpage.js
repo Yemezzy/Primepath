@@ -16,7 +16,7 @@ import { TbMail, TbTruckDelivery } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Backdrop from "@mui/material/Backdrop";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -26,63 +26,73 @@ import DialogTitle from "@mui/material/DialogTitle";
 import { amber } from "@mui/material/colors";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Footer from "./Footer";
 
 const Firstpage = () => {
-useEffect(() => {
-  Aos.init({ duration: 2000 });
-}, []);
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
+  const track = "PP54896452-014SH";
+  const track2 = "PP54896452-015SH";
+  // const error = "";
+  const [data, setData] = useState("");
+  const [error, setError] = useState("");
 
- const track = "23105548938495893";
- // const error = "";
- const [data, setData] = useState("");
- const [error, setError] = useState("");
-
- const submit = (event) => {
-   if (data === track) {
-       setTimeout(() => {
-         setShow(false);
-        
-       }, 500);
-     setInterval(() => {
-      setOpen(true);
-     }, 800);
-     setTimeout(() => { 
-       window.location.href = "/500";
-     }, 5000);
-   } else {
-     setTimeout(() => {
-       setError("Unable to find details / Incorrect Tracking Number");
-     }, 3000);
-     
-   }
-   if (data === "") {
-     setError("");
-   }
- };
-
-
-
-    const [open, setOpen] = React.useState(false);
- const color = amber[900];
-    const handleOpen = () => {
-      setOpen(true);
+  const submit = (event) => {
+    if (data === track) {
       setTimeout(() => {
-        setOpen(false);
+        setShow(false);
+      }, 500);
+      setInterval(() => {
+        setOpen(true);
+      }, 800);
+      setTimeout(() => {
+        window.location.href = "/500";
+      }, 5000);
+    } else {
+      setTimeout(() => {
+        setError("Unable to find details / Incorrect Tracking Number");
       }, 3000);
+    }
+    if (data === "") {
+      setError("");
+    } if (data === track2) {
+       setTimeout(() => {
+        setShow(false);
+      }, 500);
+      setInterval(() => {
+        setOpen(true);
+      }, 800);
       setTimeout(() => {
-        setShow(true);
-      }, 3050);
+        window.location.href = "/400";
+      }, 5000);
+    } else {
+      setTimeout(() => {
+        setError("Unable to find details / Incorrect Tracking Number");
+      }, 3000);
+    }
   };
-  
 
-   const [show, setShow] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
+  const color = amber[900];
+  const handleOpen = () => {
+    setOpen(true);
+    setTimeout(() => {
+      setOpen(false);
+    }, 3000);
+    setTimeout(() => {
+      setShow(true);
+    }, 3050);
+  };
 
-   const handleClose = () => {
-     setShow(false);
-     setOpen(false)
-     setError("");
-   };
+  const [show, setShow] = React.useState(false);
+
+  const handleClose = () => {
+    setShow(false);
+    setOpen(false);
+    setError("");
+  };
 
   return (
     <div>
@@ -134,15 +144,17 @@ useEffect(() => {
                 data-aos="fade-up"
                 className="md:text-lg px-5 text-white md:px-28 mt-3 md:mt-5"
               >
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem unde fugit, molestiae voluptatem repudiandae
-                vitae quidem repellat dolorem quibusdam odio nisi temporibus
-                quaerat nostrum provident? Pariatur explicabo maiores aliquam
-                dignissimos!
+                Established in 2015, PrimePath has been a trusted name in the
+                logistics industry for 9 years. Our journey began with a vision
+                to revolutionize the way goods are transported, and since then,
+                we have been at the forefront of innovation , continually
+                adapting to meet the evolving needs of our clients. Today we
+                stand as a symbol of reliability, efficiency, and excellence in
+                logistics service
               </p>
 
               <button
-                data-aos="fade-up"
+                data-aos="zoom-in"
                 onClick={handleOpen}
                 className="px-5 py-3 text-xl font-bold text-white bg-[#FF4800] mt-5"
               >
@@ -421,14 +433,29 @@ useEffect(() => {
           <section data-aos="fade-right" className="flex justify-center">
             <img
               className="md:w-full w-[50%]"
-              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2016/11/WBENC-full-tilt-logistics.png?lossy=1&strip=1&webp=1"
+              src="https://www.fastfutures.com/app/uploads/2022/04/HSBC-Symbol-png.webp"
               alt=""
             />
           </section>
           <section data-aos="fade-right" className="flex justify-center">
             <img
               className="md:w-full w-[50%]"
-              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2017/12/EDAWNLogo-300x169.png?lossy=1&strip=1&webp=1"
+              src="https://tefco.com.au/wp-content/uploads/2023/03/tefco-logo-v9a-RGB-03.svg"
+              alt=""
+            />
+          </section>
+          <section data-aos="fade-right" className="flex justify-center">
+            <img
+              className="md:w-full w-[50%]"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Hapag_lloyd_logo.svg/2560px-Hapag_lloyd_logo.svg.png"
+              alt=""
+            />
+          </section>
+
+          <section data-aos="fade-right" className="flex justify-center">
+            <img
+              className="md:w-full w-[50%]"
+              src="https://vertoro.com/wp-content/uploads/2021/10/Maersk_Logo.png"
               alt=""
             />
           </section>
@@ -436,13 +463,6 @@ useEffect(() => {
             <img
               className="md:w-full w-[50%]"
               src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2019/10/SmartWay-transport-partnership.jpg?lossy=1&strip=1&webp=1"
-              alt=""
-            />
-          </section>
-          <section data-aos="fade-right" className="flex justify-center">
-            <img
-              className="md:w-full w-[50%]"
-              src="https://b2216782.smushcdn.com/2216782/wp-content/uploads/2018/05/family-owned-business-award.png?lossy=1&strip=1&webp=1"
               alt=""
             />
           </section>
@@ -461,14 +481,14 @@ useEffect(() => {
           >
             <div className="flex items-center justify-center ">
               <img
-                src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/team-1.jpg"
+                src="https://media.discordapp.net/attachments/1228309868595642468/1228310649935757443/IMG_3240.jpg?ex=662b946f&is=66191f6f&hm=ed4518f13cb2b13bb44cf9602b76781b47ab2e3b7730f95dfca7662f706e5c7e&=&format=webp&width=335&height=417"
                 alt=""
-                className="rounded-full"
+                className="rounded-full h-[250px] w-[250px] "
               />
             </div>
             <div className="mt-5">
               <p className="text-lg text-center font-bold uppercase">
-                Albeto Robort
+                Philippe Leclair
               </p>
               <p className="text-sm mt-2 font-medium text-center">
                 Operation Manager
@@ -479,16 +499,16 @@ useEffect(() => {
             data-aos="fade-right"
             className="p-3 shadow-md shadow-gray-500"
           >
-            <div className="flex items-center justify-center ">
+            <div className="flex  items-center justify-center ">
               <img
-                src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/team-2.jpg"
+                src="https://media.discordapp.net/attachments/1228309868595642468/1228310121516503121/IMG_3236.jpg?ex=662b93f1&is=66191ef1&hm=68e89ac90f83b77c45bd7a5c76b3cc49132f6c4b725678d70d8b9a722f1bac4e&=&format=webp&width=278&height=417"
                 alt=""
-                className="rounded-full"
+                className="rounded-full h-[250px] w-[250px]"
               />
             </div>
             <div className="mt-5">
               <p className="text-lg text-center font-bold uppercase">
-                samuel bold
+                Ethan Gadsdon
               </p>
               <p className="text-sm mt-2 font-medium text-center">
                 Supply Chain Analyst
@@ -501,14 +521,14 @@ useEffect(() => {
           >
             <div className="flex items-center justify-center ">
               <img
-                src="https://demo.htmlcodex.com/1309/logistics-company-website-template/img/team-3.jpg"
+                src="https://media.discordapp.net/attachments/1228309868595642468/1228310121805778975/IMG_3239.jpg?ex=662b93f1&is=66191ef1&hm=7a3eb76ebe15e843dd3d754cdd5bcf1cca09e85a83fc143b94c50aa4f4f06158&=&format=webp&width=417&height=417"
                 alt=""
-                className="rounded-full"
+                className="rounded-full h-[250px] w-[250px] "
               />
             </div>
             <div className="mt-5">
               <p className="text-lg text-center font-bold uppercase">
-                kelvin mommy
+                Leo Tucker
               </p>
               <p className="text-sm mt-2 font-medium text-center">
                 Transportation Coordinator
@@ -521,14 +541,14 @@ useEffect(() => {
           >
             <div className="flex items-center justify-center ">
               <img
-                src="https://demo.htmlcodex.com/2202/shipping-company-website-template/img/team-4.jpg"
+                src="https://media.discordapp.net/attachments/1228309868595642468/1228310121180954714/IMG_3235.jpg?ex=662b93f1&is=66191ef1&hm=e12186192ba31b935dab4d692c5496b5c6d6873ba05e5f68b6da7f1c57af0adc&=&format=webp&width=278&height=417"
                 alt=""
-                className="rounded-full"
+                className="rounded-full h-[250px] w-[250px] "
               />
             </div>
             <div className="mt-5">
               <p className="text-lg text-center font-bold uppercase">
-                Lora williams
+                Colleen G. Brown
               </p>
               <p className="text-sm mt-2 font-medium text-center">
                 Custom Broker
@@ -580,78 +600,7 @@ useEffect(() => {
         </React.Fragment>
       </div>
 
-      <footer className="bg-[#1F1F2E] mt-20 md:px-10 pb-10 pt-10 md:pt-20">
-        <div className="grid grid-rows-3 md:grid-rows-none md:grid-cols-3 md:px-20 px-5">
-          <section>
-            <p className="md:text-3xl text-2xl text-[#FF4800] font-bold">
-              Quick Links
-            </p>
-            <ul className="mt-5 text-white font-semibold">
-              <li className="flex items-center gap-2">
-                <FaMapMarkerAlt /> 123 Street, New York, USA
-              </li>
-              <li className="flex items-center gap-2 mt-2">
-                <FaPhoneAlt /> +012 345 67890
-              </li>
-              <li className="flex items-center gap-2 mt-2">
-                <MdMail /> info@example.com
-              </li>
-            </ul>
-          </section>
-          <section>
-            <p className="md:text-3xl text-2xl text-[#FF4800] font-bold">
-              Get In Touch
-            </p>
-            <ul className="mt-5 text-white font-semibold">
-              <li className="flex items-center gap-2">
-                <FaAngleRight />
-                <span className="hover:underline">
-                  <Link to="/">Home</Link>
-                </span>
-              </li>
-              <li className="flex items-center gap-2 mt-2">
-                <FaAngleRight />{" "}
-                <span className="hover:underline">
-                  <Link to="/About-us">About</Link>
-                </span>
-              </li>
-              <li className="flex items-center gap-2 mt-2">
-                <FaAngleRight />{" "}
-                <span className="hover:underline">
-                  <Link to="/Services">Services</Link>
-                </span>
-              </li>
-              <li className="flex items-center gap-2 mt-2">
-                <FaAngleRight />{" "}
-                <span className="hover:underline">
-                  <Link to="/Contact-us">Contact Us</Link>
-                </span>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <p className="md:text-3xl text-2xl text-[#FF4800] font-bold">
-              Newsletter
-            </p>
-            <div className="mt-5 text-white font-semibold">
-              <p>
-                Be the first to know about new services, special promotions, and
-                exclusive offers tailored to your logistics need. Join our
-                mailing list and stay connected with the latest development in
-                the world of logistics!
-              </p>
-              <section className="mt-5 bg-white w-full h-[50px]">
-                <input
-                  placeholder="Your Email Address"
-                  type="email"
-                  className="border-none text-black px-5 outline-none w-[80%] h-full"
-                />
-                <button className="w-[20%] h-full bg-[#FF4800]">Submit</button>
-              </section>
-            </div>
-          </section>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 };

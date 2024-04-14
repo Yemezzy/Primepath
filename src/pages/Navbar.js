@@ -44,11 +44,12 @@ const Navbar = () => {
         <section className="flex gap-2 px-16 py-3 bg-[#1F1F2E] text-white text-xs">
           <p className="flex gap-2 items-center">
             <FaPhoneAlt />
-            +012 345 6789
+            <a href="tel:+39 365 478 9576">+39 365 478 9576</a>
           </p>
           |
           <p className="flex gap-1 items-center">
-            <IoMdMail className="text-sm" /> info@example.com
+            <IoMdMail className="text-sm" />{" "}
+            <a href="mailto:info@primepath.pro">info@primepath.pro</a>
           </p>
         </section>
 
@@ -72,6 +73,7 @@ const Navbar = () => {
               <Link to="/contact-us">
                 <li className="">Contact Us</li>
               </Link>
+            
             </ul>
           </section>
 
@@ -98,39 +100,39 @@ const Navbar = () => {
           open={open}
           onClose={handleClose}
           onClick={handleClose}
-          PaperProps={{
-            elevation: 0,
-            sx: {
-              overflow: "visible",
-              filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
-              mt: 1.5,
-              "& .MuiAvatar-root": {
-                width: 32,
-                height: 32,
-                ml: -0.5,
-                mr: 1,
-              },
-              "&::before": {
-                content: '""',
-                display: "block",
-                position: "absolute",
-                top: 0,
-                right: 14,
-                width: 10,
-                height: 10,
-                bgcolor: "background.paper",
-                transform: "translateY(-50%) rotate(45deg)",
-                zIndex: 0,
-              },
-            },
-          }}
+          // PaperProps={{
+          //   elevation: 0,
+          //   sx: {
+          //     overflow: "visible",
+          //     filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+          //     mt: 1.5,
+          //     "& .MuiAvatar-root": {
+          //       width: 32,
+          //       height: 32,
+          //       ml: -0.5,
+          //       mr: 1,
+          //     },
+          //     "&::before": {
+          //       content: '""',
+          //       display: "block",
+          //       position: "absolute",
+          //       top: 0,
+          //       right: 14,
+          //       width: 10,
+          //       height: 10,
+          //       bgcolor: "background.paper",
+          //       transform: "translateY(-50%) rotate(45deg)",
+          //       zIndex: 0,
+          //     },
+          //   },
+          // }}
           transformOrigin={{ horizontal: "right", vertical: "top" }}
           anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
         >
-          <MenuItem >
+          <MenuItem>
             <Link to="/">HOME</Link>
           </MenuItem>
-          <MenuItem >
+          <MenuItem>
             <Link to="/about-us">ABOUT</Link>
           </MenuItem>
           <MenuItem>
@@ -138,6 +140,9 @@ const Navbar = () => {
           </MenuItem>
           <MenuItem>
             <Link to="/contact-us">CONTACT US</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/get-a-quote">GET A QUOTE</Link>
           </MenuItem>
         </Menu>
       </React.Fragment>
