@@ -13,17 +13,15 @@ import Seconditem from './Tracking/Seconditem';
 function App() {
   return (
     <div className="App">
-     
       <Routes>
         <Route path="/" element={<Firstpage />} />
         <Route path="/About-us" element={<About />} />
-        <Route path="/services" element={<Services/>} />
-        <Route path="/contact-us" element={<Contact/>} />
-        <Route path="/500" element={<Firstitem/>} />
-        <Route path="/400" element={<Seconditem/>} />
-        <Route path="/get-a-quote" element={<Quote/>} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/tracking/PP54896452-014SH" element={<Firstitem />} />
+        <Route path="/tracking/PP54896452-015SH" element={<Seconditem />} />
+        <Route path="/get-a-quote" element={<Quote />} />
       </Routes>
-   
     </div>
   );
 }
