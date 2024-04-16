@@ -99,7 +99,7 @@ const Firstitem = () => {
                 From: <span>Shahriar, Iran</span>
               </p>
               <p className="text-lg  mt-2 font-medium">
-                To: <span>1717 W Davidson Ave, Gastonia, NC 28052</span>
+                To: <span>1714 W Davidson Ave, Gastonia, NC 28052</span>
               </p>
             </div>
             <div className="md:grid grid-cols-2 ">
@@ -120,7 +120,7 @@ const Firstitem = () => {
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
                 <p>Shahriar, Iran</p>
-                <p>April 15, 2024, 08:15am</p>
+                <p>April 16, 2024, 08:15am</p>
               </p>
             </div>
             <div className="md:text-2xl text-xl font-bold text-black">
@@ -130,7 +130,7 @@ const Firstitem = () => {
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
                 <p>Shahriar, Iran</p>
-                <p> April 15, 2024, 09:19am</p>
+                <p> April 16, 2024, 09:19am</p>
                 <p>
                   Shipping Patner :باربری حاتمی (آسیاسفر شهریار), Barbari Hatami{" "}
                 </p>
@@ -145,7 +145,7 @@ const Firstitem = () => {
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
                 <p> Shahriar, Iran</p>
-                <p> April 15, 2024, 09:43am</p>
+                <p> April 16, 2024, 09:43am</p>
               </p>
             </div>
             <div className="md:text-2xl text-xl font-bold text-green-700">
@@ -155,7 +155,7 @@ const Firstitem = () => {
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
                 <p> Banda Abbas, Iran</p>
-                <p> April 15, 2024, 02:11pm</p>
+                <p> April 16, 2024, 02:11pm</p>
               </p>
             </div>
             {/* <div className="text-2xl font-bold">

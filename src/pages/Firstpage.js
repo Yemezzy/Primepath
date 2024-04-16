@@ -600,6 +600,8 @@ const Firstpage = () => {
         </React.Fragment>
       </div>
 
+  
+
       <Footer/>
     </div>
   );
