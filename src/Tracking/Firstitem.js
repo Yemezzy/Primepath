@@ -148,7 +148,7 @@ const Firstitem = () => {
                 <p> April 16, 2024, 09:43am</p>
               </p>
             </div>
-            <div className="md:text-2xl text-xl font-bold text-green-700">
+            <div className="md:text-2xl text-xl font-bold">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Arrived at Primepath Facility</p>
@@ -158,17 +158,16 @@ const Firstitem = () => {
                 <p> April 16, 2024, 02:11pm</p>
               </p>
             </div>
-            {/* <div className="text-2xl font-bold">
+            <div className="text-2xl font-bold text-green-700">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
-                <p>Central Mosque</p>
+                <p>Departed PrimePath Facility</p>
               </section>
-              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                iusto corporis aliquam veritatis eius pariatur voluptates eum,
-                minus harum ut
+              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
+                <p> Banda Abbas, Iran</p>
+                <p> April 17, 2024, 10:24am</p>
               </p>
-            </div> */}
+            </div>
             {/* <div className="text-2xl font-bold ">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
