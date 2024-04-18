@@ -156,7 +156,7 @@ const Seconditem = () => {
                 <p> April 16, 2024, 02:11pm</p>
               </p>
             </div>
-            <div className="text-2xl font-bold text-green-700">
+            <div className="text-2xl font-bold text-black">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Departed PrimePath Facility</p>
@@ -166,17 +166,16 @@ const Seconditem = () => {
                 <p> April 17, 2024, 10:24am</p>
               </p>
             </div>
-            {/* <div className="text-2xl font-bold ">
+            <div className="text-2xl font-bold text-green-700">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
-                <p>Shopping Complex</p>
+                <p>Arrived Suez Canal</p>
               </section>
-              <p className="text-sm font-normal px-4 ml-3 mb-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                iusto corporis aliquam veritatis eius pariatur voluptates eum,
-                minus harum ut
+              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
+                <p> Port Said, Egypt</p>
+                <p> April 18, 2024, 06:35am</p>
               </p>
-            </div> */}
+            </div>
           </section>
 
           <p className="md:mt-0 mt-3 text-sm md:text-base">
