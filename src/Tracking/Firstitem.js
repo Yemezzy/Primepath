@@ -179,7 +179,7 @@ const Firstitem = () => {
               </p>
             </div>
             <div className="text-2xl font-bold -600">
-              <section className="flex gap-2 items-center">
+              <section className="flex text-green-700 gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Departed Suez Canal</p>
               </section>
