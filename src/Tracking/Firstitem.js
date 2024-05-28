@@ -63,10 +63,10 @@ const Firstitem = () => {
             <li className="border-2 border-black border-l-0 text-base py-2 font-semibold">
               Pending
             </li>
-            <li className="border-2 border-black border-l-0 text-base py-2 font-semibold ">
+            <li className="border-2 bg-green-700 text-white border-black border-l-0 text-base py-2 font-semibold ">
               Processing
             </li>
-            <li className="border-2 mt-1 md:mt-0 border-black border-l-2 md:border-l-0 text-base py-2 font-semibold bg-red-600 text-white">
+            <li className="border-2 mt-1 md:mt-0 border-black border-l-2 md:border-l-0 text-base py-2 font-semibold">
               On Hold
             </li>
             <li className="border-2 mt-1 md:mt-0 border-black border-l-0 text-base py-2 font-semibold">
@@ -168,12 +168,12 @@ const Firstitem = () => {
                 <p> April 17, 2024, 10:24am</p>
               </p>
             </div>
-            <div className="text-2xl font-bold text-red-600">
+            <div className="text-2xl font-bold -600">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Arrived Suez Canal</p>
               </section>
-              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-red-600">
+              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
                 <p> Port Said, Egypt</p>
                 <p> April 18, 2024, 06:35am</p>
               </p>
