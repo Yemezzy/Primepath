@@ -178,6 +178,16 @@ const Firstitem = () => {
                 <p> April 18, 2024, 06:35am</p>
               </p>
             </div>
+            <div className="text-2xl font-bold -600">
+              <section className="flex gap-2 items-center">
+                <FaMapMarkerAlt />
+                <p>Departed Suez Canal</p>
+              </section>
+              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
+                <p> Port Said, Egypt</p>
+                <p> May 28, 2024, 12:08am</p>
+              </p>
+            </div>
             {/* <div className="text-2xl font-bold ">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
