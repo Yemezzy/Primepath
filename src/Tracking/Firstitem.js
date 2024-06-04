@@ -179,7 +179,7 @@ const Firstitem = () => {
               </p>
             </div>
             <div className="text-2xl font-bold -600">
-              <section className="flex text-green-700 gap-2 items-center">
+              <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Departed Suez Canal</p>
               </section>
@@ -188,17 +188,17 @@ const Firstitem = () => {
                 <p> May 28, 2024, 12:08am</p>
               </p>
             </div>
-            {/* <div className="text-2xl font-bold ">
-              <section className="flex gap-2 items-center">
+            <div className="text-2xl font-bold -600">
+              <section className="flex text-green-700 gap-2 items-center">
                 <FaMapMarkerAlt />
-                <p>Shopping Complex</p>
+                <p>Arrived The Port Of Mersin</p>
               </section>
-              <p className="text-sm font-normal px-4 ml-3 mb-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                iusto corporis aliquam veritatis eius pariatur voluptates eum,
-                minus harum ut
+              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
+                <p> Mersin, Turkey</p>
+                <p> June 4th, 2024, 02:11pm</p>
               </p>
-            </div> */}
+            </div>
+         
           </section>
           <p className="md:mt-0 mt-3 text-sm md:text-base">
             At Primepath Logistics we exceed expectations to ensure security and
