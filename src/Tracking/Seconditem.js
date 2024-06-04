@@ -59,13 +59,13 @@ const Seconditem = () => {
             <li className="border-2  bg-black text-base text-white border-black py-2 font-semibold">
               Order Status:
             </li>
-            <li className="border-2 border-black border-l-0 text-base py-2 font-semibold">
+            <li className="border-2  border-black border-l-0 text-base py-2 font-semibold">
               Pending
             </li>
-            <li className="border-2 border-black border-l-0 text-base py-2 font-semibold ">
+            <li className="border-2 bg-green-700 text-white border-black border-l-0 text-base py-2 font-semibold ">
               Processing
             </li>
-            <li className="border-2 mt-1 md:mt-0 border-black border-l-2 md:border-l-0 text-base py-2 font-semibold bg-red-600 text-white">
+            <li className="border-2 mt-1 md:mt-0 border-black border-l-2 md:border-l-0 text-base py-2 font-semibold  ">
               On Hold
             </li>
             <li className="border-2 mt-1 md:mt-0 border-black border-l-0 text-base py-2 font-semibold">
@@ -79,7 +79,7 @@ const Seconditem = () => {
 
         <div className="md:mt-10 mt-5">
           <p className="font-medium">Tracking Number</p>
-          <p className="font-bold underline">PP54896452-015SH</p>
+          <p className="font-bold underline">PP54896453-015SH</p>
         </div>
 
         <div className="mt-10 md:grid gap-10 grid-cols-2">
@@ -87,18 +87,19 @@ const Seconditem = () => {
             <p className="text-xl font-semibold">Delivery Details</p>
             <div className="md:grid grid-cols-2 ">
               <p className="text-lg mt-2 font-medium">
-                Sender: <span>Samantha Hunter</span>
+                Sender: <span>Thomas Ellis Gibson</span>
               </p>
               <p className="text-lg mt-2 font-medium">
-                Reciver: <span>Matthew Houndersheldt</span>
+                Reciver: <span>Blanka Brejchova</span>
               </p>
             </div>
             <div className="md:grid grid-cols-2 ">
               <p className="text-lg mt-2 font-medium">
-                From: <span>Shahriar, Iran</span>
+                From: <span>Los Angeles, CA</span>
               </p>
               <p className="text-lg  mt-2 font-medium">
-                To: <span>5306 Frankfort Hwy Ridgeley WV 26753</span>
+                To:{" "}
+                <span>Jiraskova 176, 344 01 Domazlice 1-Bezdekovske....</span>
               </p>
             </div>
             <div className="md:grid grid-cols-2 ">
@@ -117,63 +118,18 @@ const Seconditem = () => {
                 <p>Shipping label created, Awaiting item</p>
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
-                <p>Shahriar, Iran</p>
-                <p>April 16, 2024, 08:15am</p>
+                <p>Los Angeles, CA</p>
+                <p>June 4, 2024, 10:16am</p>
               </p>
             </div>
             <div className="md:text-2xl text-xl font-bold text-black">
-              <section className="flex gap-2 items-center">
+              <section className="flex text-green-700 gap-2 items-center">
                 <FaMapMarkerAlt />
-                <p>Received by shipping patner, Primepath awaiting item</p>
+                <p>Received by Primepath</p>
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
-                <p>Shahriar, Iran</p>
-                <p> April 16, 2024, 09:19am</p>
-                <p>
-                  Shipping Patner :باربری حاتمی (آسیاسفر شهریار), Barbari Hatami{" "}
-                </p>
-              </p>
-            </div>
-            <div className="md:text-2xl text-xl font-bold text-black">
-              <section className="flex gap-2 items-center">
-                <FaMapMarkerAlt />
-                <p>
-                  Departed Shipping Patner Facility, Primepath awaiting item
-                </p>
-              </section>
-              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
-                <p> Shahriar, Iran</p>
-                <p> April 16, 2024, 09:43pm</p>
-              </p>
-            </div>
-            <div className="md:text-2xl text-xl font-bold">
-              <section className="flex gap-2 items-center">
-                <FaMapMarkerAlt />
-                <p>Arrived at Primepath Facility</p>
-              </section>
-              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-black">
-                <p> Banda Abbas, Iran</p>
-                <p> April 16, 2024, 02:11pm</p>
-              </p>
-            </div>
-            <div className="text-2xl font-bold text-black">
-              <section className="flex gap-2 items-center">
-                <FaMapMarkerAlt />
-                <p>Departed PrimePath Facility</p>
-              </section>
-              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
-                <p> Banda Abbas, Iran</p>
-                <p> April 17, 2024, 10:24am</p>
-              </p>
-            </div>
-            <div className="text-2xl font-bold text-red-600">
-              <section className="flex gap-2 items-center">
-                <FaMapMarkerAlt />
-                <p>Arrived Suez Canal</p>
-              </section>
-              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-red-600">
-                <p> Port Said, Egypt</p>
-                <p> April 18, 2024, 06:35am</p>
+                <p>Los Angeles, CA</p>
+                <p>June 4, 2024, 01:11pm</p>
               </p>
             </div>
           </section>
