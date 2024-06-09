@@ -189,13 +189,23 @@ const Firstitem = () => {
               </p>
             </div>
             <div className="text-2xl font-bold -600">
-              <section className="flex text-green-700 gap-2 items-center">
+              <section className="flex  gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Arrived The Port Of Mersin</p>
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
                 <p> Mersin, Turkey</p>
                 <p> June 4th, 2024, 02:11pm</p>
+              </p>
+            </div>
+            <div className="text-2xl font-bold -600">
+              <section className="flex text-green-700 gap-2 items-center">
+                <FaMapMarkerAlt />
+                <p>Arrived Instanbul Airport (IST)</p>
+              </section>
+              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
+                <p> Instanbul, Turkey</p>
+                <p> June 9th, 2024, 04:27pm</p>
               </p>
             </div>
          

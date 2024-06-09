@@ -133,13 +133,23 @@ const Seconditem = () => {
               </p>
             </div>
             <div className="md:text-2xl text-xl font-bold text-black">
-              <section className="flex text-green-700 gap-2 items-center">
+              <section className="flex  gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Arrived Port of Los Angeles</p>
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
                 <p>California, USA</p>
                 <p>June 5, 2024, 03:37pm</p>
+              </p>
+            </div>
+            <div className="md:text-2xl text-xl font-bold text-black">
+              <section className="flex text-green-700 gap-2 items-center">
+                <FaMapMarkerAlt />
+                <p>Departed Port of Los Angeles</p>
+              </section>
+              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
+                <p>California, USA</p>
+                <p>June 9, 2024, 12:11pm</p>
               </p>
             </div>
           </section>
