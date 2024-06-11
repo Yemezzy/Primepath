@@ -63,10 +63,10 @@ const Firstitem = () => {
             <li className="border-2 border-black border-l-0 text-base py-2 font-semibold">
               Pending
             </li>
-            <li className="border-2 bg-green-700 text-white border-black border-l-0 text-base py-2 font-semibold ">
+            <li className="border-2 border-black border-l-0 text-base py-2 font-semibold ">
               Processing
             </li>
-            <li className="border-2 mt-1 md:mt-0 border-black border-l-2 md:border-l-0 text-base py-2 font-semibold">
+            <li className="border-2 bg-red-700 text-white mt-1 md:mt-0 border-black border-l-2 md:border-l-0 text-base py-2 font-semibold">
               On Hold
             </li>
             <li className="border-2 mt-1 md:mt-0 border-black border-l-0 text-base py-2 font-semibold">
@@ -199,7 +199,7 @@ const Firstitem = () => {
               </p>
             </div>
             <div className="text-2xl font-bold -600">
-              <section className="flex text-green-700 gap-2 items-center">
+              <section className="flex text-red-700 gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Arrived Instanbul Airport (IST)</p>
               </section>
@@ -208,7 +208,6 @@ const Firstitem = () => {
                 <p> June 9th, 2024, 04:27pm</p>
               </p>
             </div>
-         
           </section>
           <p className="md:mt-0 mt-3 text-sm md:text-base">
             At Primepath Logistics we exceed expectations to ensure security and

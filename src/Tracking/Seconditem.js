@@ -62,10 +62,10 @@ const Seconditem = () => {
             <li className="border-2  border-black border-l-0 text-base py-2 font-semibold">
               Pending
             </li>
-            <li className="border-2 bg-green-700 text-white border-black border-l-0 text-base py-2 font-semibold ">
+            <li className="border-2  border-black border-l-0 text-base py-2 font-semibold ">
               Processing
             </li>
-            <li className="border-2 mt-1 md:mt-0 border-black border-l-2 md:border-l-0 text-base py-2 font-semibold  ">
+            <li className="border-2 bg-red-700 text-white mt-1 md:mt-0 border-black border-l-2 md:border-l-0 text-base py-2 font-semibold  ">
               On Hold
             </li>
             <li className="border-2 mt-1 md:mt-0 border-black border-l-0 text-base py-2 font-semibold">
@@ -143,13 +143,23 @@ const Seconditem = () => {
               </p>
             </div>
             <div className="md:text-2xl text-xl font-bold text-black">
-              <section className="flex text-green-700 gap-2 items-center">
+              <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Departed Port of Los Angeles</p>
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
                 <p>California, USA</p>
                 <p>June 9, 2024, 12:11pm</p>
+              </p>
+            </div>
+            <div className="md:text-2xl text-xl font-bold text-black">
+              <section className="flex text-red-700 gap-2 items-center">
+                <FaMapMarkerAlt />
+                <p>Arrived Hamburg Port</p>
+              </section>
+              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
+                <p>Hamburg, Germany</p>
+                <p>June 11, 2024, 11:23pm</p>
               </p>
             </div>
           </section>
