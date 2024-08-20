@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Firstitem from './Tracking/Firstitem';
 import Quote from './pages/Quote';
 import Seconditem from './Tracking/Seconditem';
+import Item3 from './Tracking/Item3';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/tracking/PP54896452-014SH" element={<Firstitem />} />
         <Route path="/tracking/PP54896453-015SH" element={<Seconditem />} />
+        <Route path="/tracking/PP54896454-016SH" element={<Item3 />} />
         <Route path="/get-a-quote" element={<Quote />} />
       </Routes>
     </div>

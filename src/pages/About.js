@@ -130,7 +130,7 @@ const About = () => {
           >
             <div className="flex items-center justify-center ">
               <img
-                src="https://media.discordapp.net/attachments/1228309868595642468/1228310649935757443/IMG_3240.jpg?ex=662b946f&is=66191f6f&hm=ed4518f13cb2b13bb44cf9602b76781b47ab2e3b7730f95dfca7662f706e5c7e&=&format=webp&width=335&height=417"
+                src="./img/img11.webp"
                 alt=""
                 className="rounded-full h-[250px] w-[250px] "
               />
@@ -150,7 +150,7 @@ const About = () => {
           >
             <div className="flex  items-center justify-center ">
               <img
-                src="https://media.discordapp.net/attachments/1228309868595642468/1228310121516503121/IMG_3236.jpg?ex=662b93f1&is=66191ef1&hm=68e89ac90f83b77c45bd7a5c76b3cc49132f6c4b725678d70d8b9a722f1bac4e&=&format=webp&width=278&height=417"
+                src="./img/img33.webp"
                 alt=""
                 className="rounded-full h-[250px] w-[250px]"
               />
@@ -170,7 +170,7 @@ const About = () => {
           >
             <div className="flex items-center justify-center ">
               <img
-                src="https://media.discordapp.net/attachments/1228309868595642468/1228310121805778975/IMG_3239.jpg?ex=662b93f1&is=66191ef1&hm=7a3eb76ebe15e843dd3d754cdd5bcf1cca09e85a83fc143b94c50aa4f4f06158&=&format=webp&width=417&height=417"
+                src="./img/img44.webp"
                 alt=""
                 className="rounded-full h-[250px] w-[250px] "
               />
@@ -190,7 +190,7 @@ const About = () => {
           >
             <div className="flex items-center justify-center ">
               <img
-                src="https://media.discordapp.net/attachments/1228309868595642468/1228310121180954714/IMG_3235.jpg?ex=662b93f1&is=66191ef1&hm=e12186192ba31b935dab4d692c5496b5c6d6873ba05e5f68b6da7f1c57af0adc&=&format=webp&width=278&height=417"
+                src="./img/img22.webp"
                 alt=""
                 className="rounded-full h-[250px] w-[250px] "
               />
