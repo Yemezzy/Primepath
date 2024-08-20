@@ -182,7 +182,7 @@ const Item3 = () => {
               </section>
               <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
                 <p>Denver, Colorado.</p>
-                <p>June 20, 2024, 07:11pm</p>
+                <p>August 20, 2024, 07:11pm</p>
               </p>
             </div>
             {/* <div className="md:text-2xl text-xl font-bold text-black">
