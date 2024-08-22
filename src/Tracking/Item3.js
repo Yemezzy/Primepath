@@ -185,7 +185,7 @@ const Item3 = () => {
                 <p>August 20, 2024, 07:11pm</p>
               </p>
             </div>
-            {/* <div className="md:text-2xl text-xl font-bold text-black">
+            <div className="md:text-2xl text-xl font-bold text-black">
               <section className="flex gap-2 items-center">
                 <FaMapMarkerAlt />
                 <p>Departed Denver Internation Airport(DEN)</p>
@@ -194,7 +194,17 @@ const Item3 = () => {
                 <p>Denver, Colorado.</p>
                 <p>June 21, 2024, 04:30am</p>
               </p>
-            </div> */}
+            </div>
+            <div className="md:text-2xl text-xl font-bold text-black">
+              <section className="flex gap-2 items-center">
+                <FaMapMarkerAlt />
+                <p>Arrived Quebec Jean Lesage International Airport(YQB)</p>
+              </section>
+              <p className="text-sm font-normal px-4 ml-3 mt-2 h-[100px] border-l-4 border-dotted border-green-700">
+                <p>Quebec, Canada.</p>
+                <p>August 22, 2024, 07:00am</p>
+              </p>
+            </div>
 
             <p className="md:mt-5 mt-3 text-sm md:text-base">
             At Primepath Logistics we exceed expectations to ensure security and
